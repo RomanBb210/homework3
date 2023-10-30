@@ -34,6 +34,7 @@ p {
 
 ul {
     margin: 0px;
+    padding: 0px;
     list-style: none;
 }
 
@@ -43,11 +44,9 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
-
-/* diznatys */
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -61,7 +60,8 @@ ul {
     margin: -1px;
 }
 
-/* header logo */
+
+/* header */
 
 .logo {
     color: var(--accent-color);
@@ -71,13 +71,13 @@ ul {
     text-decoration: none;
     margin-top: 24px;
     margin-bottom: 25px;
+    margin-left: 0;
+    margin-right: 93px;
 }
 
 .part {
     color: var(--color-black);
 }
-
-/* header nav */
 
 .header .link {
     font-weight: 500;
@@ -89,9 +89,8 @@ ul {
     color: var(--accent-color);
 }
 
-/* header contact */
-
 .header .contact {
+    color: var(--primary-text-color);
     text-decoration: none;
 }
 
@@ -116,7 +115,6 @@ ul {
     align-items: center;
 }
 
-
 .header-section .link-list {
     display: flex;
     gap: 50px;
@@ -126,21 +124,20 @@ ul {
     display: block;
     margin: 32px 0;
 }
-.container .block {
-    display: inline-block;
-}
+
 .header-section .contact-list {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 50px;
 }
-/* main hero section */
 
+
+/* hero  */
 
 .hero {
     display: block;
-    background-color: teal;
+    background-color: var(--footer-color);
     padding-top: 200px;
     padding-bottom: 280px;
     margin-left: auto;
@@ -175,11 +172,8 @@ ul {
     border: none;
 }
 
-/* advanced */
 
-/* .advanced .container {
-    display: flex;
-} */
+/* advanced */
 
 .advanced {
     margin-top: 94px;
@@ -187,12 +181,12 @@ ul {
 
 .advanced .container {
     display: flex;
-    /* justify-content: space-between; */
+    padding: 0px;
+    justify-content: space-between;
 }
 
 .advanced-list {
     display: flex;
-    justify-content: space-between;
     /* width: 270px; */
     height: 98px;
     gap: 30px;
@@ -214,18 +208,145 @@ ul {
     color: var(--primary-text-color);
     font-size: 14px;
     font-weight: 400;
-    /* line-height: 24px; */
+    line-height: 24px;
     letter-spacing: 0.42px;
 }
-/* team */
 
-.team-section {
-    background-color: var(--team-color);
+
+/* photo */
+
+.photo {
+    display: flex;
+    margin-top: 94px;
+}
+
+.photo-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.photo .photo-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 
+/* team */
+
+.team {
+    background-color: var(--team-color);
+    margin-top: 94px;
+}
+
+.team-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-card-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.team-card-item {
+    background-color: var(--color-white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 94px;
+}
+
+.name-title {
+    color: var(--title-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.team-text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+
 .footer {
+    width: 1600px;
+    height: 252px;
     background-color: var(--footer-color);
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
+
+.footer .logo {
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.footer .link {
+    color: var(--color-white);
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.footer .address-list{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer .contact {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.footer .part {
+    color: var(--color-white);
+}
+
+
+/* portfolio */
+
+.portfolio .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
+}
+
+.button-list {
+    display: flex;
+    gap: 30px;
+}
+
+.portfolio .button {
+    display: block;
+    color: var(--title-text-color);
+    background-color: var(--team-color);
+    border-radius: 4px;
+    padding: 6px auto;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    /* line-height: 26px;
+    letter-spacing: 0.48px; */
+}
+
